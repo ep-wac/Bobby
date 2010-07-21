@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bobby}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Phillips"]
@@ -26,6 +26,9 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bobby.gemspec",
+     "features/manage_posts.feature",
+     "features/step_definitions/devise_steps.rb",
+     "features/step_definitions/post_steps.rb",
      "features/step_definitions/web_steps.rb",
      "features/support/env.rb",
      "features/support/paths.rb",
@@ -34,8 +37,17 @@ Gem::Specification.new do |s|
      "lib/tasks/cucumber.rake",
      "lib/tasks/jquery_setup.rake",
      "spec/bobby_spec.rb",
+     "spec/controllers/posts_controller_spec.rb",
+     "spec/helpers/posts_helper_spec.rb",
+     "spec/models/post_spec.rb",
+     "spec/requests/posts_spec.rb",
+     "spec/routing/posts_routing_spec.rb",
      "spec/spec.opts",
-     "spec/spec_helper.rb"
+     "spec/spec_helper.rb",
+     "spec/views/posts/edit.html.erb_spec.rb",
+     "spec/views/posts/index.html.erb_spec.rb",
+     "spec/views/posts/new.html.erb_spec.rb",
+     "spec/views/posts/show.html.erb_spec.rb"
   ]
   s.homepage = %q{http://github.com/ep-wac/Bobby}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -44,7 +56,16 @@ Gem::Specification.new do |s|
   s.summary = %q{Have the Ol' Bobby Tit Head take his turns at watching over the access to actions on controllers and instances of models?}
   s.test_files = [
     "spec/bobby_spec.rb",
+     "spec/controllers/posts_controller_spec.rb",
+     "spec/helpers/posts_helper_spec.rb",
+     "spec/models/post_spec.rb",
+     "spec/requests/posts_spec.rb",
+     "spec/routing/posts_routing_spec.rb",
      "spec/spec_helper.rb",
+     "spec/views/posts/edit.html.erb_spec.rb",
+     "spec/views/posts/index.html.erb_spec.rb",
+     "spec/views/posts/new.html.erb_spec.rb",
+     "spec/views/posts/show.html.erb_spec.rb",
      "test/performance/browsing_test.rb",
      "test/test_helper.rb",
      "test/unit/user_test.rb"
