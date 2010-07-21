@@ -5,10 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "bobby"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Have the Ol' Bobby Tit Head take his turns at watching over the access to actions on controllers and instances of models?}
+    gem.description = %Q{Bobby is all about guarding the access to actions on controllers and model instances on your Rails projects, and requires you to setup some authentication
+                      regime in advance - like Devise, Authlogic et al - with a User model, and preferably a GroupUser and GroupUsersUsers models too.}
     gem.email = "enrique.phillips.wac@gmail.com"
-    gem.homepage = "http://github.com/ep-wac/bobby"
+    gem.homepage = "http://github.com/ep-wac/Bobby"
     gem.authors = ["Enrique Phillips"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "cucumber", ">= 0"

@@ -5,12 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bobby}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Phillips"]
   s.date = %q{2010-07-21}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Bobby is all about guarding the access to actions on controllers and model instances on your Rails projects, and requires you to setup some authentication
+                      regime in advance - like Devise, Authlogic et al - with a User model, and preferably a GroupUser and GroupUsersUsers models too.}
   s.email = %q{enrique.phillips.wac@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -24,6 +25,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "bobby.gemspec",
      "features/bobby.feature",
      "features/step_definitions/bobby_steps.rb",
      "features/support/env.rb",
@@ -32,11 +34,11 @@ Gem::Specification.new do |s|
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/ep-wac/bobby}
+  s.homepage = %q{http://github.com/ep-wac/Bobby}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Have the Ol' Bobby Tit Head take his turns at watching over the access to actions on controllers and instances of models?}
   s.test_files = [
     "spec/bobby_spec.rb",
      "spec/spec_helper.rb",

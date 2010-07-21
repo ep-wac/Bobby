@@ -1,6 +1,102 @@
-= bobby
+= Bobby
 
-Description goes here.
+== Welcome
+
+I choose the name paying homage to the many policemen (that would be cops to some of you)
+relentlessly patroling the streets all over this cynical and moraleless world, be it
+in the Big Apple or some back street in Algier.
+
+Bobby is all about guarding access 
+
+# access to actions on controllers
+# access to model instances (table rows) 
+
+CAVEAT: The data guarding is not nearly solved with Bobby - I will be the first to commit to that!
+Data guarding should be enforced on a number of levels - with the encryption of data in SQL
+servers being at one end of the rope, and physical access to buildings and data terminals
+at the other end. Somewhere in between lays Bobby, next to considerations whether to just
+guard data terminals or expand the guarding to encompass cables and network infrastructure
+too! And then there is the physical world of documents, papers, letters, telephone calls
+etc - well, Bobby is but a tiny piece in a much larger puzzle :)
+
+== Waiver
+
+Bobby is my first attempt to building a Gem and also my very first Rails project published
+with Github, and (I am sorry to confessing) even my first try at TDD.
+
+That out in the open - please don't bury me for all the wrongs I'm probably doing as I go
+along <:)
+
+== Use Cases
+
+Bobby is my attempt to solving a small number of use cases that I have listed below:
+
+=== Guard access to actions on controllers/models
+
+I realize that a fair number of projects exist which provide authorisation to users but most
+that I've been able to google, have focused on semi-static authorisations through some
+configuration setup.
+
+In my experience - and judging from the use cases below - authorisations of today are 
+fluctuating and certainly not slabbed in concrete. Delegating authorisations is at the discretion of
+superiors and hardly something they will delegate to geeks in the IT department.
+
+==== UC #1: Add an authorisation for an action on a controller to any given user
+
+===== New apprentice in Procurement
+
+"Carrie, the new apprentice in Procurement, will need to have access to our Supply Management System,
+through the PurchaseOrdersController (PO), PurchaseReceiptsController (PR) and StockItemsController (SI). She is 
+authorised to list, show and insert PO's, list, show and update PR's, and list and show SI's."
+
+==== UC #2: Temporarily allow a user access to confidential information otherwise not permitted for him to peruse
+
+===== Internships, trainees et al
+
+"Elisabeth, trainee and Msc student, has been granted no bars access to information in Accounting during a 
+three week internship with our company."
+
+=== Guard access to model instances - rows loaded from tables
+
+I've read through a number of ACL based projects and I guess it has to be me not being
+well-educated, but I've yet to understand how to set one of them up :(
+
+Offering an organisation access control at a granular level like row data will prove to be a true Sword of Damocles
+as the organisation enjoys fine-grained access control, delegating and restricting access left and right - unknowingly
+creating chaos in the general levels of auhtorisation and chain of command, eventually leading to a demand for 
+access control dissolution all together - 'We Need A Clean Slate' kind of job - which was entirely not what the access
+control system had been setup to do in the first place!
+
+Used wisely, in a select few places, granular access control will, however, augment a general access control 
+
+==== UC #3: New account manager in Procurement
+
+"Carrie, the new large account manager in Procurement, will need to have access to information pertaining to our
+three top suppliers, in Accounting."
+
+==== UC #4: Strategic observations as Customer Comments
+
+"The brass will be evaluating customer performance during the next 3 months and will add comments to each customers 'blog'. 
+This information is not to disseminate into the wild!"
+
+NOTE: Arguably, this UC #4 is rather construed, but it proves the point that a certain sphere of information should be detainable
+within the boundaries of some system for the benefit of a finite party of users!
+
+== Compatibility
+
+Bobby is a Rails 3 Gem, pre version 3 compatibility is scarce, at best!
+
+== Requirements
+
+== Known Bugs
+
+== Installation
+
+Generally, the easy way to use Bobby, is to add it to your Gemfile
+
+gem 'bobby'
+
+and have Bundler check/install it if necessary
 
 == Note on Patches/Pull Requests
  
