@@ -19,3 +19,15 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+.bundle
+app
+config
+config.ru
+db
+doc
+log
+public
+script
+test
+tmp
+vendor
