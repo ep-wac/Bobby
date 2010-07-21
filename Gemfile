@@ -23,18 +23,19 @@ group :development do
 
 end
 
+gem "rspec-rails", ">= 2.0.0.beta.17"
+gem 'rspec'
+
+gem 'cucumber'
+gem 'cucumber-rails'
+gem 'aruba', ">= 0.2.0", :require => nil
+gem 'jeweler'
+gem 'capybara'
+
 #
 # gems used exclusively in testing
 group :test do
 
-	gem "rspec-rails", ">= 2.0.0.beta.17"
-	gem 'rspec'
-
-	gem 'cucumber'
-	gem 'cucumber-rails'
-	gem 'aruba', ">= 0.2.0", :require => nil
-	gem 'jeweler'
-	gem 'webrat'
 
 end
 

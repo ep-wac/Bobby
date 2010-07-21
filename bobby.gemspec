@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bobby}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Phillips"]
@@ -26,10 +26,13 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bobby.gemspec",
-     "features/bobby.feature",
-     "features/step_definitions/bobby_steps.rb",
+     "features/step_definitions/web_steps.rb",
      "features/support/env.rb",
+     "features/support/paths.rb",
      "lib/bobby.rb",
+     "lib/tasks/.gitkeep",
+     "lib/tasks/cucumber.rake",
+     "lib/tasks/jquery_setup.rake",
      "spec/bobby_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
@@ -43,7 +46,8 @@ Gem::Specification.new do |s|
     "spec/bobby_spec.rb",
      "spec/spec_helper.rb",
      "test/performance/browsing_test.rb",
-     "test/test_helper.rb"
+     "test/test_helper.rb",
+     "test/unit/user_test.rb"
   ]
 
   if s.respond_to? :specification_version then
