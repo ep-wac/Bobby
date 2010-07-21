@@ -1,4 +1,3 @@
-source :gemcutter
 source "http://rubygems.org"
 
 gem 'rails', '3.0.0.beta4'
@@ -20,6 +19,9 @@ group :development do
 
 	# for development only !
 	#gem "rails-footnotes" - not ready for Rails 3
+	
+	# for testing gems
+	gem 'rubigen'
 
 end
 
@@ -38,6 +40,8 @@ group :test do
 
 
 end
+
+# gem 'bobby'
 
 # database interfaces to provide
 # gem 'mysql'

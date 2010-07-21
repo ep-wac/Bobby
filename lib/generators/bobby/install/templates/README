@@ -1,0 +1,29 @@
+
+===============================================================================
+
+Some setup you must do manually:
+
+  1. add a filter to your ApplicationController
+
+		before_filter :access_authorized?
+		
+	 or add the filter to select controllers
+	
+	 if controllers follows particular patterns like the Presenter Pattern
+	 add the table(s) as arguments to the filter
+	
+		before_filter :access_authorized? :posts, :comments
+
+  2. add a default_scope to your models
+
+		default_scope :instances_authorized
+
+  3. build access control structures using the Role, Permission and GroupUser views,
+ 	 like
+
+		/roles
+		/permissions
+		/group_users
+		
+
+===============================================================================

@@ -16,7 +16,32 @@ require 'cucumber/web/tableish'
 require 'capybara/rails'
 require 'capybara/cucumber'
 require 'capybara/session'
-require 'cucumber/rails/capybara_javascript_emulation' # Lets you click links with onclick javascript handlers without using @culerity or @javascript
+require 'cucumber/rails/capybara_javascript_emulation' 
+
+#require File.dirname(__FILE__) + "/../../lib/bobby"
+
+# gem 'rspec'
+# require 'spec'
+
+Before do
+  @tmp_root  = File.dirname(__FILE__) + "/../../tmp"
+  @home_path = File.expand_path(File.join(@tmp_root, "home"))
+  @lib_path  = File.expand_path(File.dirname(__FILE__) + "/../../lib")
+  FileUtils.rm_rf   @tmp_root
+  FileUtils.mkdir_p @home_path
+  ENV['HOME'] = @home_path
+end
+
+# require 'rubigen'
+# require 'rubigen/helpers/generator_test_helper'
+# include RubiGen::GeneratorTestHelper
+#require 'rails_generator'
+
+# SOURCES = Dir[File.dirname(__FILE__) + "/../../generators"].map do |f|
+#   RubiGen::PathSource.new(:test, File.expand_path(f))
+# end
+
+# Lets you click links with onclick javascript handlers without using @culerity or @javascript
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd
 # prefer to use XPath just remove this line and adjust any selectors in your
