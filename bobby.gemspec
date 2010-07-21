@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bobby}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Enrique Phillips"]
@@ -26,13 +26,27 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "bobby.gemspec",
+     "features/install_bobby.feature",
      "features/manage_posts.feature",
+     "features/step_definitions/common_steps.rb",
      "features/step_definitions/devise_steps.rb",
+     "features/step_definitions/install_bobby_steps.rb",
      "features/step_definitions/post_steps.rb",
+     "features/step_definitions/rails_setup_steps.rb",
      "features/step_definitions/web_steps.rb",
+     "features/support/common.rb",
      "features/support/env.rb",
+     "features/support/matchers.rb",
      "features/support/paths.rb",
      "lib/bobby.rb",
+     "lib/generators/bobby/USAGE",
+     "lib/generators/bobby/bobby/bobby_generator.rb",
+     "lib/generators/bobby/bobby_generator.rb",
+     "lib/generators/bobby/bobby_install_generator.rb",
+     "lib/generators/bobby/install/install_generator.rb",
+     "lib/generators/bobby/install/templates/README",
+     "lib/generators/bobby/install/templates/en.yml",
+     "lib/generators/bobby/install/templates/migration.rb",
      "lib/tasks/.gitkeep",
      "lib/tasks/cucumber.rake",
      "lib/tasks/jquery_setup.rake",
